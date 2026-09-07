@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Politica de privacidade do clipfloor: o que o site coleta (nada), quem coloca cookie na sua visita, e como desligar anuncio personalizado.">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Politica de privacidade — clipfloor">
+<meta property="og:description" content="O que este site coleta, quem coloca cookie na sua visita, e como desligar anuncio personalizado.">
+<link rel="canonical" href="https://clipfloor.github.io/privacidade/">
+<title>Política de privacidade</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+  :root{
+    --bg:#0d1117; --panel:#161b22; --raise:#1c2129; --line:#30363d;
+    --fg:#c8d2dd; --hi:#ffffff; --dim:#8792a2;
+    --green:#3fb950; --red:#f85149; --yel:#d6a13a; --blue:#6cb1ff;
+    --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    --sans:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);
+    font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:860px;margin:0 auto;padding:0 22px}
+  .topo{border-bottom:1px solid var(--line);padding:14px 0;font-family:var(--mono);font-size:.8rem;
+    display:flex;gap:18px;flex-wrap:wrap}
+  .topo a{color:var(--dim);text-decoration:none}
+  .topo a:hover{color:var(--hi)}
+  header{padding:48px 0 30px;border-bottom:1px solid var(--line)}
+  .eyebrow{font-family:var(--mono);font-size:.75rem;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--dim);margin:0 0 18px}
+  h1{font-size:clamp(1.8rem,5vw,2.5rem);line-height:1.12;margin:0 0 16px;
+    color:var(--hi);font-weight:700;letter-spacing:-.025em;text-wrap:balance}
+  .lede{font-size:1.12rem;color:var(--dim);margin:0;max-width:62ch}
+  h2{font-size:1.4rem;color:var(--hi);margin:50px 0 14px;font-weight:600;
+    letter-spacing:-.015em;text-wrap:balance}
+  h3{font-size:1.03rem;color:var(--hi);margin:26px 0 8px;font-weight:600}
+  p{margin:0 0 15px;max-width:66ch}
+  ul,ol{padding-left:22px;max-width:66ch} li{margin-bottom:9px}
+  a{color:var(--blue);text-decoration-color:#6cb1ff55;text-underline-offset:3px}
+  a:hover{text-decoration-color:var(--blue)}
+  a:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:4px}
+  .mono{font-family:var(--mono);font-size:.94em}
+  .zero{color:var(--red);font-weight:600}
+  .ok{color:var(--green)}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));
+    gap:1px;background:var(--line);border:1px solid var(--line);
+    border-radius:12px;overflow:hidden;margin:26px 0}
+  .stat{background:var(--panel);padding:18px 20px}
+  .stat b{display:block;font-size:1.6rem;color:var(--hi);font-family:var(--mono);
+    font-weight:700;line-height:1.15;font-variant-numeric:tabular-nums;letter-spacing:-.03em}
+  .stat span{font-size:.83rem;color:var(--dim);display:block;margin-top:4px}
+  .trilho{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);
+    border-radius:12px;overflow:hidden;margin:26px 0}
+  .nivel{background:var(--panel);padding:18px 22px}
+  .nivel b{display:block;font-family:var(--mono);font-size:.76rem;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--dim);margin-bottom:6px}
+  .nivel p{margin:0;font-size:.96rem}
+  .nivel strong{color:var(--hi)}
+  .nivel.decide{border-left:3px solid var(--yel)}
+  .nivel.decide b{color:var(--yel)}
+  .check{background:var(--panel);border:1px solid var(--line);border-radius:12px;
+    padding:8px 22px;margin:22px 0}
+  .check li{margin:14px 0}
+  .check strong{color:var(--hi)}
+  blockquote{margin:20px 0;padding:16px 20px;background:var(--panel);
+    border-left:3px solid var(--yel);border-radius:0 8px 8px 0;
+    font-family:var(--mono);font-size:.93rem;max-width:66ch}
+  .cta{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--green);
+    border-radius:0 10px 10px 0;padding:20px 22px;margin:34px 0}
+  .cta h3{margin-top:0}
+  .fine{font-size:.86rem;color:var(--dim)}
+  footer{border-top:1px solid var(--line);margin-top:52px;padding:28px 0 64px;
+    color:var(--dim);font-size:.87rem}
+  footer p{max-width:66ch}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style></head>
+<body>
+<div class="wrap">
+
+<nav class="topo">
+  <a href="../">← calculadora do piso</a>
+  <a href="../comecar/">guia para começar</a>
+  <a href="../nao-recebi/">clipei e não recebi</a>
+  <a href="../plataformas/">qual plataforma confiar</a>
+</nav>
+
+<header>
+  <p class="eyebrow">atualizada em 07.09.2026</p>
+  <h1>Política de privacidade</h1>
+  <p class="lede">Versão curta: este site é um monte de arquivo estático. Ele não tem cadastro,
+  não tem formulário, não tem carrinho e não guarda nada seu. O que existe de rastreamento vem
+  de terceiros, e está tudo listado abaixo com o link para desligar.</p>
+</header>
+
+<h2>O que o clipfloor coleta</h2>
+
+<p><strong>Nada.</strong> Não há login, cadastro, newsletter, comentário nem formulário em
+nenhuma página. A calculadora de piso roda inteira no seu navegador — os números que você
+digita nela não saem do seu aparelho e não são enviados para lugar nenhum.</p>
+
+<h2>Quem toca na sua visita</h2>
+
+<p>Mesmo sem coletar nada, o site depende de serviços de terceiros para existir. Cada um deles
+enxerga a sua visita à sua maneira:</p>
+
+<div class="trilho">
+  <div class="nivel"><b>hospedagem</b><p><strong>GitHub Pages.</strong> As páginas são servidas
+    pelo GitHub, que registra dados técnicos de acesso (endereço IP, navegador) para operar e
+    proteger o serviço. Detalhes na
+    <a href="https://docs.github.com/pt/site-policy/privacy-policies/github-general-privacy-statement" rel="nofollow noopener" target="_blank">declaração de privacidade do GitHub</a>.</p></div>
+  <div class="nivel"><b>fontes</b><p><strong>Google Fonts.</strong> As duas famílias
+    tipográficas do site são carregadas de <span class="mono">fonts.googleapis.com</span> e
+    <span class="mono">fonts.gstatic.com</span>, o que expõe o seu IP ao Google no momento em
+    que a página abre.</p></div>
+  <div class="nivel decide"><b>anúncios</b><p><strong>Google AdSense.</strong> É o que paga a
+    conta deste site. É também o único componente que usa cookie de verdade — a seção abaixo
+    é inteira sobre ele.</p></div>
+</div>
+
+<h2>Cookies de publicidade</h2>
+
+<ul>
+  <li>Fornecedores terceiros, <strong>incluindo o Google</strong>, usam cookies para veicular
+  anúncios com base nas suas visitas anteriores a este site ou a outros sites.</li>
+  <li>O uso de cookies de publicidade pelo Google permite que ele e seus parceiros veiculem
+  anúncios para você com base na sua visita a este e/ou a outros sites na internet.</li>
+  <li>Você pode <strong>desativar a publicidade personalizada</strong> nas
+  <a href="https://www.google.com/settings/ads" rel="nofollow noopener" target="_blank">Configurações de anúncios do Google</a>.
+  Também dá para desativar o uso de cookies de publicidade personalizada de vários fornecedores
+  terceiros de uma vez em
+  <a href="https://www.aboutads.info/choices/" rel="nofollow noopener" target="_blank">aboutads.info</a>
+  ou, na Europa, em
+  <a href="https://www.youronlinechoices.eu/" rel="nofollow noopener" target="_blank">youronlinechoices.eu</a>.</li>
+</ul>
+
+<p>Anúncios podem ser servidos por fornecedores e redes de publicidade parceiros do Google
+além do próprio Google. A lista de quem pode aparecer aqui é mantida pelo Google e fica
+pública em
+<a href="https://support.google.com/admanager/answer/9012903" rel="nofollow noopener" target="_blank">fornecedores de anúncios certificados</a>.
+Cada um deles tem a própria política e o próprio mecanismo de opt-out, acessíveis pelos links
+dessa lista.</p>
+
+<p>Se você estiver no Espaço Econômico Europeu, no Reino Unido ou na Suíça, um aviso de
+consentimento aparece antes de qualquer cookie de publicidade ser gravado, e a sua escolha ali
+vale — inclusive a de recusar.</p>
+
+<h2>Sem análise de audiência</h2>
+
+<p>Este site <strong>não usa Google Analytics</strong> nem nenhuma outra ferramenta de
+medição de audiência. Não existe pixel, não existe mapa de calor, não existe gravação de
+sessão. A única medida que eu tenho de quanta gente passa por aqui é o relatório agregado do
+próprio AdSense.</p>
+
+<h2>Menores</h2>
+
+<p>O conteúdo é sobre trabalho remunerado e não se destina a menores de 13 anos. Nenhum dado
+é coletado conscientemente de crianças.</p>
+
+<h2>Seus direitos</h2>
+
+<p>Como o site não guarda dado nenhum seu, não há o que pedir para corrigir ou apagar aqui.
+Os pedidos de acesso, correção ou exclusão precisam ir para quem de fato tem os dados: o
+Google (anúncios e fontes) e o GitHub (hospedagem), pelos canais das políticas linkadas acima.
+Se você quiser apagar o rastro local, limpar os cookies e os dados do site no seu navegador
+resolve do lado de cá.</p>
+
+<h2>Mudanças</h2>
+
+<p>Quando esta política mudar, a data no topo muda junto. O histórico completo de alterações
+é público, arquivo por arquivo, no
+<a href="https://github.com/clipfloor/clipfloor.github.io/commits/main" rel="nofollow noopener" target="_blank">repositório do site</a>
+— dá para conferir exatamente o que mudou e quando.</p>
+
+<h2>Contato</h2>
+
+<p>Para qualquer questão sobre esta política, abra uma issue pública no
+<a href="https://github.com/clipfloor/clipfloor.github.io/issues" rel="nofollow noopener" target="_blank">repositório do site</a>.
+É o canal que eu leio.</p>
+
+<footer>
+  <p>clipfloor — dados públicos de campanhas de clipagem, medidos e conferidos.
+  Não é promessa de renda e não é consultoria financeira.</p>
+  <p><a href="../">calculadora do piso</a> · <a href="../comecar/">guia para começar</a> ·
+  <a href="../nao-recebi/">clipei e não recebi</a> · <a href="../plataformas/">qual plataforma confiar</a></p>
+</footer>
+
+</div>
+</body>
+</html>
