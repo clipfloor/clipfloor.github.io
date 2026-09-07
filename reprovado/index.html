@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Por que um clipe e reprovado: 38 briefs de campanha lidos linha por linha. 61% exigem 30 dias no ar, 55% proibem impulsionar, 39% exigem conta dedicada.">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Por que o seu clipe foi reprovado">
+<meta property="og:description" content="38 briefs de campanha lidos linha por linha. As regras que reprovam, contadas.">
+<link rel="canonical" href="https://clipfloor.github.io/reprovado/">
+<meta name="google-adsense-account" content="ca-pub-6170201574455771">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6170201574455771" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Por que o seu clipe foi reprovado","description":"38 briefs de campanhas de clipagem lidos linha por linha: quais regras aparecem em quantas campanhas.","inLanguage":"pt-BR","datePublished":"2026-09-07","author":{"@type":"Organization","name":"clipfloor"},"publisher":{"@type":"Organization","name":"clipfloor"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://clipfloor.github.io/reprovado/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Por quanto tempo preciso deixar o clipe no ar?","acceptedAnswer":{"@type":"Answer","text":"Trinta dias. Dos 38 briefs de campanha lidos, 23 exigiam que o post ficasse no ar por um prazo mínimo, e em todos os 23 o número era 30 dias. Nenhum pedia 7, 15 ou 60. Apagar o post antes disso costuma cancelar o pagamento que o clipe já tinha gerado."}},
+{"@type":"Question","name":"Posso impulsionar o clipe para conseguir mais views?","acceptedAnswer":{"@type":"Answer","text":"Na maioria das campanhas, não. Vinte e um dos 38 briefs proibiam explicitamente impulsionamento, anúncio pago, story boost ou compra de views. É a segunda regra mais comum depois do prazo de 30 dias, e views compradas normalmente não são pagas mesmo quando o clipe não é removido."}},
+{"@type":"Question","name":"Qual a duração mínima de um clipe?","acceptedAnswer":{"@type":"Answer","text":"Quinze dos 38 briefs exigiam duração mínima. Entre os que davam um número, 10 segundos foi o valor mais comum, com a faixa indo de 7 a 30 segundos. Clipe mais curto que o mínimo da campanha é reprovado independentemente de quantas views fizer."}}]}</script>
+<title>Por que o clipe foi reprovado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+  :root{
+    --bg:#0d1117; --panel:#161b22; --raise:#1c2129; --line:#30363d;
+    --fg:#c8d2dd; --hi:#ffffff; --dim:#8792a2;
+    --green:#3fb950; --red:#f85149; --yel:#d6a13a; --blue:#6cb1ff;
+    --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    --sans:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);
+    font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:860px;margin:0 auto;padding:0 22px}
+  .topo{border-bottom:1px solid var(--line);padding:14px 0;font-family:var(--mono);font-size:.8rem;
+    display:flex;gap:18px;flex-wrap:wrap}
+  .topo a{color:var(--dim);text-decoration:none}
+  .topo a:hover{color:var(--hi)}
+  header{padding:48px 0 30px;border-bottom:1px solid var(--line)}
+  .eyebrow{font-family:var(--mono);font-size:.75rem;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--dim);margin:0 0 18px}
+  h1{font-size:clamp(1.8rem,5vw,2.5rem);line-height:1.12;margin:0 0 16px;
+    color:var(--hi);font-weight:700;letter-spacing:-.025em;text-wrap:balance}
+  .lede{font-size:1.12rem;color:var(--dim);margin:0;max-width:62ch}
+  h2{font-size:1.4rem;color:var(--hi);margin:50px 0 14px;font-weight:600;
+    letter-spacing:-.015em;text-wrap:balance}
+  h3{font-size:1.03rem;color:var(--hi);margin:26px 0 8px;font-weight:600}
+  p{margin:0 0 15px;max-width:66ch}
+  ul,ol{padding-left:22px;max-width:66ch} li{margin-bottom:9px}
+  a{color:var(--blue);text-decoration-color:#6cb1ff55;text-underline-offset:3px}
+  a:hover{text-decoration-color:var(--blue)}
+  a:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:4px}
+  .mono{font-family:var(--mono);font-size:.94em}
+  .zero{color:var(--red);font-weight:600}
+  .ok{color:var(--green)}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));
+    gap:1px;background:var(--line);border:1px solid var(--line);
+    border-radius:12px;overflow:hidden;margin:26px 0}
+  .stat{background:var(--panel);padding:18px 20px}
+  .stat b{display:block;font-size:1.6rem;color:var(--hi);font-family:var(--mono);
+    font-weight:700;line-height:1.15;font-variant-numeric:tabular-nums;letter-spacing:-.03em}
+  .stat span{font-size:.83rem;color:var(--dim);display:block;margin-top:4px}
+  .trilho{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);
+    border-radius:12px;overflow:hidden;margin:26px 0}
+  .nivel{background:var(--panel);padding:18px 22px}
+  .nivel b{display:block;font-family:var(--mono);font-size:.76rem;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--dim);margin-bottom:6px}
+  .nivel p{margin:0;font-size:.96rem}
+  .nivel strong{color:var(--hi)}
+  .nivel.decide{border-left:3px solid var(--yel)}
+  .nivel.decide b{color:var(--yel)}
+  .check{background:var(--panel);border:1px solid var(--line);border-radius:12px;
+    padding:8px 22px;margin:22px 0}
+  .check li{margin:14px 0}
+  .check strong{color:var(--hi)}
+  blockquote{margin:20px 0;padding:16px 20px;background:var(--panel);
+    border-left:3px solid var(--yel);border-radius:0 8px 8px 0;
+    font-family:var(--mono);font-size:.93rem;max-width:66ch}
+  .cta{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--green);
+    border-radius:0 10px 10px 0;padding:20px 22px;margin:34px 0}
+  .cta h3{margin-top:0}
+  .fine{font-size:.86rem;color:var(--dim)}
+  footer{border-top:1px solid var(--line);margin-top:52px;padding:28px 0 64px;
+    color:var(--dim);font-size:.87rem}
+  footer p{max-width:66ch}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style><style>
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:26px 0}
+  table{border-collapse:collapse;width:100%;font-size:.88rem;min-width:560px}
+  th{background:var(--raise);color:var(--dim);font-family:var(--mono);font-size:.72rem;
+     letter-spacing:.09em;text-transform:uppercase;text-align:left;padding:11px 14px;
+     border-bottom:1px solid var(--line);white-space:nowrap;position:sticky;top:0}
+  td{padding:10px 14px;border-bottom:1px solid #21262d;background:var(--panel)}
+  tr:last-child td{border-bottom:none}
+  td.n{font-family:var(--mono);text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .barra{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);
+    border-radius:12px;overflow:hidden;margin:26px 0}
+  .faixa{background:var(--panel);padding:12px 20px;display:grid;
+    grid-template-columns:110px 1fr 34px;align-items:center;gap:14px}
+  .faixa b{font-family:var(--mono);font-size:.82rem;color:var(--dim);font-weight:400}
+  .faixa i{height:13px;border-radius:3px;display:block;background:var(--blue);font-style:normal}
+  .faixa u{font-family:var(--mono);font-size:.85rem;color:var(--hi);text-decoration:none;text-align:right}
+  .faixa.ruim i{background:var(--red)}
+  .duelo{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);
+    border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:26px 0}
+  .lado{background:var(--panel);padding:20px 22px}
+  .lado b{display:block;font-family:var(--mono);font-size:.74rem;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--dim);margin-bottom:8px}
+  .lado strong{display:block;font-size:1.5rem;color:var(--hi);font-family:var(--mono);
+    letter-spacing:-.03em;margin-bottom:4px}
+  .lado span{font-size:.85rem;color:var(--dim)}
+  @media(max-width:560px){.duelo{grid-template-columns:1fr}}
+</style><style>
+  .regra{background:var(--panel);border:1px solid var(--line);border-radius:12px;
+    padding:16px 20px;margin:12px 0;display:grid;grid-template-columns:64px 1fr;
+    gap:18px;align-items:start}
+  .regra em{font-family:var(--mono);font-style:normal;font-size:1.25rem;color:var(--hi);
+    font-weight:700;letter-spacing:-.03em;line-height:1.2;font-variant-numeric:tabular-nums}
+  .regra em small{display:block;font-size:.68rem;color:var(--dim);font-weight:400;
+    letter-spacing:.06em;margin-top:2px}
+  .regra h3{margin:0 0 5px;font-size:1rem}
+  .regra p{margin:0;font-size:.94rem;color:var(--dim)}
+  .regra.alta{border-left:3px solid var(--red)}
+  .regra.alta em{color:var(--red)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<nav class="topo">
+  <a href="../">← calculadora do piso</a>
+  <a href="../comecar/">guia para começar</a>
+  <a href="../nao-recebi/">clipei e não recebi</a>
+  <a href="../plataformas/">qual plataforma confiar</a>
+  <a href="../quanto-ganha/">quanto um clipador ganha</a>
+  <a href="../redes/">em qual rede clipar</a>
+</nav>
+
+<header>
+  <p class="eyebrow">38 briefs de campanha · 204 mil caracteres de regra</p>
+  <h1>Por que o seu clipe<br>foi reprovado</h1>
+  <p class="lede">Peguei os briefs de 38 campanhas e li linha por linha, contando quais
+  exigências aparecem em quantas. Não é opinião sobre o que "costuma" reprovar: é a
+  frequência real das regras que estão escritas.</p>
+</header>
+
+<h2>Primeiro, o tamanho do problema</h2>
+
+<p>Os 38 briefs somam <strong>203.891 caracteres</strong>. São <strong>5.365 caracteres
+por campanha</strong>, em média — umas três páginas de texto denso, cheio de marcadores,
+antes de você cortar o primeiro frame.</p>
+
+<p>Ninguém lê isso. E não ler é exatamente o que a estrutura espera: a regra que reprova
+quase nunca está no topo, e quase nunca está no lugar onde o dinheiro é anunciado.</p>
+
+<h2>As regras, por frequência</h2>
+
+<div class="regra alta">
+  <em>23<small>DE 38</small></em>
+  <div><h3>O post tem que ficar 30 dias no ar</h3>
+  <p>E <strong>30 é o único número que aparece</strong>. Nenhum brief pediu 7, 15 ou 60
+  dias — quando existe prazo, é 30. Apagar antes cancela o pagamento que o clipe já tinha
+  gerado, então o clipe que "deu certo" e foi removido rende zero.</p></div>
+</div>
+
+<div class="regra alta">
+  <em>21<small>DE 38</small></em>
+  <div><h3>Proibido impulsionar</h3>
+  <p>Anúncio pago, story boost, tráfego comprado. É a segunda regra mais comum, e a mais
+  tentadora justamente para quem está travado no piso. View comprada costuma não ser paga
+  mesmo quando o clipe não é derrubado.</p></div>
+</div>
+
+<div class="regra">
+  <em>19<small>DE 38</small></em>
+  <div><h3>Só o material fornecido pela campanha</h3>
+  <p>Metade das campanhas entrega um drive ou documento com o material oficial e só aceita
+  clipe cortado dali. Achar o vídeo original no YouTube e cortar por conta própria reprova,
+  mesmo que o conteúdo seja o mesmo.</p></div>
+</div>
+
+<div class="regra">
+  <em>15<small>DE 38</small></em>
+  <div><h3>Conta dedicada ao tema</h3>
+  <p>A conta tem que ser só daquele conteúdo. Isso é mais caro do que parece: uma conta
+  dedicada não serve para a próxima campanha, e é o que torna impossível atender duas
+  campanhas de temas diferentes com o mesmo perfil.</p></div>
+</div>
+
+<div class="regra">
+  <em>15<small>DE 38</small></em>
+  <div><h3>Duração mínima de vídeo</h3>
+  <p>Dez desses 15 traziam um número explícito, e em <strong>seis deles era 10 segundos</strong> — a faixa inteira ia de 7 a 30. Corte mais curto que o mínimo é reprovado por régua, sem olhar quantas views fez.</p></div>
+</div>
+
+<div class="regra">
+  <em>7<small>DE 38</small></em>
+  <div><h3>Hashtag exata obrigatória</h3>
+  <p>Não é "use hashtags relevantes": é uma hashtag específica, às vezes duas, às vezes numa
+  ordem determinada. Errar uma letra reprova, e o erro não aparece em lugar nenhum antes da
+  revisão.</p></div>
+</div>
+
+<div class="regra">
+  <em>5<small>DE 38</small></em>
+  <div><h3>Proibido conteúdo gerado por IA</h3>
+  <p>Voz sintética e vídeo gerado por IA aparecem como reprovação explícita em cinco
+  campanhas. Ainda é minoria, mas é a regra que mais cresce em briefs recentes.</p></div>
+</div>
+
+<h2>A categoria que não dá para contar</h2>
+
+<p>Além dessas, quase todo brief tem uma exigência que só existe naquela campanha e não se
+repete em nenhuma outra. Alguns exemplos reais que eu encontrei:</p>
+
+<ul>
+  <li>a legenda automática tem que escrever o nome da marca <strong>corretamente</strong>,
+  ou o clipe é reprovado;</li>
+  <li>é proibido mencionar a ação da empresa ou o código dela na bolsa em qualquer
+  legenda;</li>
+  <li>o código do mapa tem que ficar visível na tela por pelo menos 2 segundos;</li>
+  <li>é proibido qualquer tom negativo sobre a marca ou sobre a pessoa que aparece.</li>
+</ul>
+
+<p>Essas não entram em estatística porque cada uma aparece uma vez só. E é justamente por
+isso que elas pegam: <strong>não dá para aprender por experiência</strong>. A regra da
+campanha anterior não te protege na próxima.</p>
+
+<h2>Como a reprovação acontece</h2>
+
+<p>Um dos briefs descreve o fluxo com todas as letras: primeiro uma checagem automática
+compara o clipe contra as regras da campanha, e depois <strong>uma pessoa revisa
+manualmente, em 12 a 24 horas</strong>.</p>
+
+<p>Duas consequências práticas. A primeira é que a checagem automática pega o que é
+verificável por máquina — hashtag, duração, marcação, se o post ainda está no ar. Vale a
+pena tratar esses itens como binários, porque é assim que eles são checados. A segunda é
+que a reprovação chega com um dia de atraso: quando você descobre, já postou os outros.</p>
+
+<div class="cta">
+  <h3>A checagem de 60 segundos antes de postar</h3>
+  <p>Sete perguntas, todas com resposta objetiva no brief da campanha:</p>
+  <ol>
+    <li>Qual o prazo mínimo no ar? (assuma 30 dias até ler o contrário)</li>
+    <li>Tem duração mínima? Meu corte passa dela?</li>
+    <li>Tem hashtag obrigatória? Está escrita <em>exatamente</em> como no brief?</li>
+    <li>Tem marcação ou link de rastreio obrigatório?</li>
+    <li>O material tem que sair do drive oficial?</li>
+    <li>Esta conta pode ter outro conteúdo, ou tem que ser dedicada?</li>
+    <li>Tem alguma proibição específica desta campanha? (é onde mora a armadilha)</li>
+  </ol>
+  <p class="fine">Se a resposta de qualquer uma for "não sei", ela ainda está no brief —
+  e é mais barato ler agora do que perder 30 dias de post.</p>
+</div>
+
+<h2>Onde isso entra na conta</h2>
+
+<p>Reprovação e piso são problemas diferentes, e vale não confundir. O
+<a href="../">piso</a> decide se o clipe <em>poderia</em> render alguma coisa; a regra do
+brief decide se ele <em>vai ser contado</em>. Um clipe pode passar folgado do piso e valer
+zero por causa de uma hashtag.</p>
+
+<p>Por isso a ordem certa é: primeiro conferir se a campanha é matematicamente viável para
+o seu tamanho de conta, e só depois gastar tempo lendo o brief inteiro. Ler três páginas de
+regra de uma campanha que nunca ia te pagar é o pior uso possível da sua hora.</p>
+
+<footer>
+  <p>38 briefs de campanhas de clipagem lidos em 07/09/2026, somando 203.891 caracteres.
+  Cada regra foi contada uma vez por brief, não por ocorrência. As exigências que aparecem
+  em uma única campanha estão descritas mas ficaram fora das contagens, por não terem
+  frequência.</p>
+  <p>Página estática, sem cadastro e sem medição de audiência. Os cookies que existem são os
+  de publicidade — explicados na <a href="../privacidade/">política de privacidade</a>.
+  Isto é uma medição, não uma promessa de renda.</p>
+  <p class="fine"><a href="../">calculadora do piso</a> ·
+  <a href="../comecar/">guia para começar</a> ·
+  <a href="../nao-recebi/">clipei e não recebi</a> ·
+  <a href="../plataformas/">qual plataforma confiar</a> ·
+  <a href="../quanto-ganha/">quanto um clipador ganha</a> ·
+  <a href="../redes/">em qual rede clipar</a> ·
+  <strong>por que o clipe foi reprovado</strong> ·
+  <a href="../privacidade/">privacidade</a></p>
+</footer>
+
+</div>
+</body>
+</html>
