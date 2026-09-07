@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://clipfloor.github.io/sitemap.xml
