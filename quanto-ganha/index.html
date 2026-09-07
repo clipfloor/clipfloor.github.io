@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Quanto um clipador ganha de verdade: 4.207 clipadores dividiram US$ 225.426 em 43 campanhas. Mediana de US$ 27 por pessoa. E nem verba grande nem pouca concorrencia mudam isso.">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Quanto um clipador realmente ganha numa campanha">
+<meta property="og:description" content="43 campanhas, 4.207 clipadores, US$ 225.426 divididos. A mediana por pessoa foi US$ 27,28.">
+<link rel="canonical" href="https://clipfloor.github.io/quanto-ganha/">
+<meta name="google-adsense-account" content="ca-pub-6170201574455771">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6170201574455771" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Quanto um clipador realmente ganha numa campanha","description":"43 campanhas de clipagem medidas: 4.207 clipadores dividiram US$ 225.426, mediana de US$ 27,28 por pessoa.","inLanguage":"pt-BR","datePublished":"2026-09-07","author":{"@type":"Organization","name":"clipfloor"},"publisher":{"@type":"Organization","name":"clipfloor"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://clipfloor.github.io/quanto-ganha/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Quanto ganha um clipador por campanha?","acceptedAnswer":{"@type":"Answer","text":"Nas 43 campanhas medidas em 02/09/2026, 4.207 clipadores dividiram US$ 225.426 já pagos. Isso dá uma média de US$ 53,58 por pessoa, mas a média é puxada por poucas campanhas grandes: a mediana das campanhas foi de US$ 27,28 por clipador, e 20 das 43 pagaram menos de US$ 25 por pessoa. Como o ganho dentro de uma campanha é desigual, o clipador do meio recebe menos que essa média."}},
+{"@type":"Question","name":"Quantas pessoas concorrem numa campanha de clipagem?","acceptedAnswer":{"@type":"Answer","text":"A mediana foi de 42 clipadores por campanha, com mínimo de 23 e máximo de 735. A campanha com mais gente tinha 735 clipadores dividindo US$ 9.000 já pagos, o que deu US$ 12,24 por pessoa."}},
+{"@type":"Question","name":"Campanha com verba maior paga mais?","acceptedAnswer":{"@type":"Answer","text":"Não nos dados medidos. Entre as campanhas com verba de US$ 20.000 ou mais, uma de US$ 25.000 pagou US$ 8,99 por clipador enquanto uma de US$ 32.200 pagou US$ 773,08. O número de concorrentes também não previu nada: campanhas com até 42 clipadores pagaram mediana de US$ 27,27 por pessoa e as com mais de 42 pagaram US$ 27,66. O que decide é a tabela de pagamento — o piso mínimo e o teto por clipe."}}]}</script>
+<title>Quanto um clipador realmente ganha</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+  :root{
+    --bg:#0d1117; --panel:#161b22; --raise:#1c2129; --line:#30363d;
+    --fg:#c8d2dd; --hi:#ffffff; --dim:#8792a2;
+    --green:#3fb950; --red:#f85149; --yel:#d6a13a; --blue:#6cb1ff;
+    --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    --sans:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);
+    font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:860px;margin:0 auto;padding:0 22px}
+  .topo{border-bottom:1px solid var(--line);padding:14px 0;font-family:var(--mono);font-size:.8rem;
+    display:flex;gap:18px;flex-wrap:wrap}
+  .topo a{color:var(--dim);text-decoration:none}
+  .topo a:hover{color:var(--hi)}
+  header{padding:48px 0 30px;border-bottom:1px solid var(--line)}
+  .eyebrow{font-family:var(--mono);font-size:.75rem;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--dim);margin:0 0 18px}
+  h1{font-size:clamp(1.8rem,5vw,2.5rem);line-height:1.12;margin:0 0 16px;
+    color:var(--hi);font-weight:700;letter-spacing:-.025em;text-wrap:balance}
+  .lede{font-size:1.12rem;color:var(--dim);margin:0;max-width:62ch}
+  h2{font-size:1.4rem;color:var(--hi);margin:50px 0 14px;font-weight:600;
+    letter-spacing:-.015em;text-wrap:balance}
+  h3{font-size:1.03rem;color:var(--hi);margin:26px 0 8px;font-weight:600}
+  p{margin:0 0 15px;max-width:66ch}
+  ul,ol{padding-left:22px;max-width:66ch} li{margin-bottom:9px}
+  a{color:var(--blue);text-decoration-color:#6cb1ff55;text-underline-offset:3px}
+  a:hover{text-decoration-color:var(--blue)}
+  a:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:4px}
+  .mono{font-family:var(--mono);font-size:.94em}
+  .zero{color:var(--red);font-weight:600}
+  .ok{color:var(--green)}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));
+    gap:1px;background:var(--line);border:1px solid var(--line);
+    border-radius:12px;overflow:hidden;margin:26px 0}
+  .stat{background:var(--panel);padding:18px 20px}
+  .stat b{display:block;font-size:1.6rem;color:var(--hi);font-family:var(--mono);
+    font-weight:700;line-height:1.15;font-variant-numeric:tabular-nums;letter-spacing:-.03em}
+  .stat span{font-size:.83rem;color:var(--dim);display:block;margin-top:4px}
+  .trilho{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);
+    border-radius:12px;overflow:hidden;margin:26px 0}
+  .nivel{background:var(--panel);padding:18px 22px}
+  .nivel b{display:block;font-family:var(--mono);font-size:.76rem;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--dim);margin-bottom:6px}
+  .nivel p{margin:0;font-size:.96rem}
+  .nivel strong{color:var(--hi)}
+  .nivel.decide{border-left:3px solid var(--yel)}
+  .nivel.decide b{color:var(--yel)}
+  .check{background:var(--panel);border:1px solid var(--line);border-radius:12px;
+    padding:8px 22px;margin:22px 0}
+  .check li{margin:14px 0}
+  .check strong{color:var(--hi)}
+  blockquote{margin:20px 0;padding:16px 20px;background:var(--panel);
+    border-left:3px solid var(--yel);border-radius:0 8px 8px 0;
+    font-family:var(--mono);font-size:.93rem;max-width:66ch}
+  .cta{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--green);
+    border-radius:0 10px 10px 0;padding:20px 22px;margin:34px 0}
+  .cta h3{margin-top:0}
+  .fine{font-size:.86rem;color:var(--dim)}
+  footer{border-top:1px solid var(--line);margin-top:52px;padding:28px 0 64px;
+    color:var(--dim);font-size:.87rem}
+  footer p{max-width:66ch}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style><style>
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:26px 0}
+  table{border-collapse:collapse;width:100%;font-size:.88rem;min-width:560px}
+  th{background:var(--raise);color:var(--dim);font-family:var(--mono);font-size:.72rem;
+     letter-spacing:.09em;text-transform:uppercase;text-align:left;padding:11px 14px;
+     border-bottom:1px solid var(--line);white-space:nowrap;position:sticky;top:0}
+  td{padding:10px 14px;border-bottom:1px solid #21262d;background:var(--panel)}
+  tr:last-child td{border-bottom:none}
+  td.n{font-family:var(--mono);text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .barra{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);
+    border-radius:12px;overflow:hidden;margin:26px 0}
+  .faixa{background:var(--panel);padding:12px 20px;display:grid;
+    grid-template-columns:110px 1fr 34px;align-items:center;gap:14px}
+  .faixa b{font-family:var(--mono);font-size:.82rem;color:var(--dim);font-weight:400}
+  .faixa i{height:13px;border-radius:3px;display:block;background:var(--blue);font-style:normal}
+  .faixa u{font-family:var(--mono);font-size:.85rem;color:var(--hi);text-decoration:none;text-align:right}
+  .faixa.ruim i{background:var(--red)}
+  .duelo{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);
+    border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:26px 0}
+  .lado{background:var(--panel);padding:20px 22px}
+  .lado b{display:block;font-family:var(--mono);font-size:.74rem;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--dim);margin-bottom:8px}
+  .lado strong{display:block;font-size:1.5rem;color:var(--hi);font-family:var(--mono);
+    letter-spacing:-.03em;margin-bottom:4px}
+  .lado span{font-size:.85rem;color:var(--dim)}
+  @media(max-width:560px){.duelo{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<nav class="topo">
+  <a href="../">← calculadora do piso</a>
+  <a href="../comecar/">guia para começar</a>
+  <a href="../nao-recebi/">clipei e não recebi</a>
+  <a href="../plataformas/">qual plataforma confiar</a>
+</nav>
+
+<header>
+  <p class="eyebrow">43 campanhas · 4.207 clipadores · 02.09.2026</p>
+  <h1>Quanto um clipador<br>realmente ganha</h1>
+  <p class="lede">Toda campanha mostra a verba em dólares grandes na capa. Nenhuma mostra
+  quanta gente já entrou para dividir aquilo. Os dois números estavam na mesma página o
+  tempo todo — só faltava alguém dividir um pelo outro.</p>
+</header>
+
+<h2>US$ 225.426 divididos por 4.207 pessoas</h2>
+
+<p>Peguei as 43 campanhas em que a página pública mostrava, ao mesmo tempo, quanto já
+tinha sido pago e quantos clipadores estavam participando. Somando todas:</p>
+
+<div class="stats">
+  <div class="stat"><b>4.207</b><span>clipadores nas 43 campanhas</span></div>
+  <div class="stat"><b>US$ 225 mil</b><span>já pagos, somando tudo</span></div>
+  <div class="stat"><b>US$ 53</b><span>média global por pessoa</span></div>
+  <div class="stat"><b>US$ 27</b><span>mediana por campanha</span></div>
+</div>
+
+<p>A média global é <strong>US$ 53,58</strong>. Mas média aqui engana duas vezes, e as
+duas para cima.</p>
+
+<p><strong>Primeiro:</strong> ela é puxada por meia dúzia de campanhas grandes. A mediana
+das campanhas — o valor do meio, o que descreve a campanha típica — é
+<strong>US$ 27,28 por clipador</strong>.</p>
+
+<p><strong>Segundo:</strong> mesmo esses US$ 27 são uma <em>média dentro da campanha</em>.
+O ganho não é dividido igual: quem estoura de views leva muito mais, e essa média sobe por
+causa deles. O clipador do meio de cada campanha recebe <strong>menos</strong> que o número
+que aparece na coluna da tabela lá embaixo.</p>
+
+<h2>Onde as 43 campanhas caem</h2>
+
+<div class="barra">
+  <div class="faixa ruim"><b>até US$ 10</b><i style="width:33%"></i><u>8</u></div>
+  <div class="faixa ruim"><b>US$ 10 a 25</b><i style="width:50%"></i><u>12</u></div>
+  <div class="faixa"><b>US$ 25 a 50</b><i style="width:33%"></i><u>8</u></div>
+  <div class="faixa"><b>US$ 50 a 100</b><i style="width:25%"></i><u>6</u></div>
+  <div class="faixa"><b>acima de US$ 100</b><i style="width:37%"></i><u>9</u></div>
+</div>
+
+<p><strong>20 das 43 campanhas pagaram menos de US$ 25 por clipador.</strong> Oito ficaram
+abaixo de US$ 10. Isso não é o que <em>você</em> vai ganhar — é o que a campanha inteira
+já demonstrou que consegue pagar por cabeça, com o dinheiro que ela de fato liberou.</p>
+
+<h2>As duas coisas que não previram nada</h2>
+
+<p>Antes de fazer a conta eu tinha duas suposições. As duas caíram.</p>
+
+<h3>1. "Vou numa campanha com pouca gente para ter menos concorrência"</h3>
+
+<div class="duelo">
+  <div class="lado"><b>até 42 clipadores</b><strong>US$ 27,27</strong>
+    <span>mediana por clipador · 22 campanhas</span></div>
+  <div class="lado"><b>acima de 42 clipadores</b><strong>US$ 27,66</strong>
+    <span>mediana por clipador · 21 campanhas</span></div>
+</div>
+
+<p>Trinta e nove centavos de diferença. <strong>O tamanho da multidão não muda quanto sobra
+por cabeça.</strong> Campanha cheia costuma estar cheia porque paga; campanha vazia costuma
+estar vazia porque não paga. Os dois efeitos se cancelam.</p>
+
+<h3>2. "Vou na campanha de verba grande"</h3>
+
+<p>Entre as campanhas com verba anunciada de US$ 20 mil ou mais:</p>
+
+<blockquote>Uma campanha de <strong>US$ 25.000</strong> pagou <strong>US$ 8,99</strong> por
+clipador.<br>Uma campanha de <strong>US$ 32.200</strong> pagou <strong>US$ 773,08</strong>
+por clipador.</blockquote>
+
+<p>Oitenta e seis vezes de diferença, com verbas quase iguais. A que tinha mais gente de
+todas — 735 clipadores — anunciava US$ 23.600 e tinha liberado US$ 9.000, o que deu
+<strong>US$ 12,24 por pessoa</strong>.</p>
+
+<p>Verba grande é o número que a campanha põe na capa justamente porque atrai. Ele não diz
+nada sobre o que chega em você.</p>
+
+<h2>O que sobra quando essas duas caem</h2>
+
+<p>Se não é a verba e não é a concorrência, o que decide é o que já estava na
+<a href="../">calculadora</a>: <strong>a tabela de pagamento</strong>. O piso mínimo, que
+zera tudo abaixo dele, e o teto por clipe, que corta tudo acima. Uma campanha de US$ 32 mil
+com piso baixo paga; uma de US$ 25 mil com piso de 10.000 views por clipe não paga, por
+mais dinheiro que ela tenha no cofre.</p>
+
+<div class="cta">
+  <h3>A conta de 10 segundos antes de entrar</h3>
+  <p>Toda página de campanha mostra <span class="mono">$X / $Y usados</span> e o número de
+  clipadores participando. Divida o <strong>X</strong> (o que já foi pago) pelo número de
+  clipadores.</p>
+  <p class="fine">Deu menos de US$ 10? A campanha já provou, com dinheiro real que saiu do
+  caixa dela, que não paga por cabeça. Não é previsão — é histórico.</p>
+</div>
+
+<h2>As 43 campanhas, uma por uma</h2>
+
+<p>Ordenadas do que mais pagou por clipador para o que menos pagou. <span class="zero">Vermelho</span>
+é abaixo de US$ 25; <span class="ok">verde</span> é acima de US$ 100.</p>
+
+<div class="tw">
+<table>
+<thead><tr><th>campanha</th><th>clipadores</th><th>verba</th><th>já pago</th><th>por clipador</th></tr></thead>
+<tbody>
+<tr><td>Backyard Breaks [Clipping Campaign]</td><td class="n">26</td><td class="n">$32.200</td><td class="n">$20.100</td><td class="n ok">$773.08</td></tr>
+<tr><td>ROBTHEBANK CLIPS $10/10.000</td><td class="n">29</td><td class="n">$31.500</td><td class="n">$13.900</td><td class="n ok">$479.31</td></tr>
+<tr><td>Upload faceless slideshows</td><td class="n">31</td><td class="n">$10.000</td><td class="n">$8.400</td><td class="n ok">$270.97</td></tr>
+<tr><td>Yomi Denzel Clipping - 1$ par 1000 vues</td><td class="n">192</td><td class="n">$238.000</td><td class="n">$47.200</td><td class="n ok">$245.83</td></tr>
+<tr><td>ARZ Urus Clipping</td><td class="n">25</td><td class="n">$10.000</td><td class="n">$6.000</td><td class="n ok">$240.00</td></tr>
+<tr><td>[VIRAL] My Mini Mom &amp; Baby Clipping</td><td class="n">26</td><td class="n">$10.000</td><td class="n">$3.300</td><td class="n ok">$126.92</td></tr>
+<tr><td>Call of Duty - Modern Warfare 4 Multiplayer Trailer Clipping</td><td class="n">324</td><td class="n">$100.000</td><td class="n">$35.300</td><td class="n ok">$108.95</td></tr>
+<tr><td>Lovable Clipping</td><td class="n">32</td><td class="n">$50.000</td><td class="n">$3.300</td><td class="n ok">$103.12</td></tr>
+<tr><td>Topps x Clipfarm</td><td class="n">51</td><td class="n">$40.000</td><td class="n">$5.100</td><td class="n ok">$100.00</td></tr>
+<tr><td>Omoggle Clipping</td><td class="n">117</td><td class="n">$12.000</td><td class="n">$9.200</td><td class="n ">$78.63</td></tr>
+<tr><td>Boxabl Official Clipping</td><td class="n">158</td><td class="n">$85.000</td><td class="n">$11.100</td><td class="n ">$70.25</td></tr>
+<tr><td>Nick Malinosky Campaign</td><td class="n">99</td><td class="n">$8.000</td><td class="n">$6.600</td><td class="n ">$66.67</td></tr>
+<tr><td>Call of Duty - Modern Warfare 4 Multiplayer Beta Gameplay Cl</td><td class="n">146</td><td class="n">$105.000</td><td class="n">$9.700</td><td class="n ">$66.44</td></tr>
+<tr><td>LiveMap Clipping | $100k Budget</td><td class="n">23</td><td class="n">$45.000</td><td class="n">$1.400</td><td class="n ">$60.87</td></tr>
+<tr><td>K Shami Clipping</td><td class="n">43</td><td class="n">$10.000</td><td class="n">$2.600</td><td class="n ">$60.47</td></tr>
+<tr><td>Liftly Campaign</td><td class="n">41</td><td class="n">$4.000</td><td class="n">$1.800</td><td class="n ">$43.90</td></tr>
+<tr><td>Jesser x ClipFarm</td><td class="n">39</td><td class="n">$3.200</td><td class="n">$1.600</td><td class="n ">$41.03</td></tr>
+<tr><td>NIVEL 0 - 0.40$ CPM - 100$ MAX</td><td class="n">27</td><td class="n">$1.500</td><td class="n">$1.100</td><td class="n ">$40.74</td></tr>
+<tr><td>Daniel Bitton Official Clipping</td><td class="n">47</td><td class="n">$5.000</td><td class="n">$1.900</td><td class="n ">$40.43</td></tr>
+<tr><td>Jake Paul x ClipFarm</td><td class="n">105</td><td class="n">$4.000</td><td class="n">$3.000</td><td class="n ">$28.57</td></tr>
+<tr><td>DumbMoneyHunter &#x27;s Clipping</td><td class="n">47</td><td class="n">$2.300</td><td class="n">$1.300</td><td class="n ">$27.66</td></tr>
+<tr><td>The Cap Table - CLOUTED (Podcast Clipping)</td><td class="n">31</td><td class="n">$5.000</td><td class="n">$846</td><td class="n ">$27.28</td></tr>
+<tr><td>The Cap Table: (Podcast Clipping)</td><td class="n">32</td><td class="n">$4.000</td><td class="n">$872</td><td class="n ">$27.25</td></tr>
+<tr><td>Call of Duty - Zodiac Beta Weekend 2 Free Play Clipping</td><td class="n">28</td><td class="n">$20.000</td><td class="n">$693</td><td class="n zero">$24.75</td></tr>
+<tr><td>Swaggy C | Clipping Campaign</td><td class="n">39</td><td class="n">$1.500</td><td class="n">$951</td><td class="n zero">$24.39</td></tr>
+<tr><td>Klap Viral Clipping | $7.000 budget | $2 CPM</td><td class="n">114</td><td class="n">$7.000</td><td class="n">$2.700</td><td class="n zero">$23.68</td></tr>
+<tr><td>The Split Clipping</td><td class="n">30</td><td class="n">$4.000</td><td class="n">$603</td><td class="n zero">$20.09</td></tr>
+<tr><td>ASHTON HALL - LINKME TONIGHT</td><td class="n">95</td><td class="n">$3.500</td><td class="n">$1.700</td><td class="n zero">$17.89</td></tr>
+<tr><td>Ridge Sweepstakes Clipping</td><td class="n">39</td><td class="n">$22.500</td><td class="n">$663</td><td class="n zero">$17.00</td></tr>
+<tr><td>CLIPPING ESPAÑOL - Daniel Curto</td><td class="n">30</td><td class="n">$2.000</td><td class="n">$506</td><td class="n zero">$16.86</td></tr>
+<tr><td>BOXED Clipping</td><td class="n">29</td><td class="n">$20.800</td><td class="n">$455</td><td class="n zero">$15.70</td></tr>
+<tr><td>?</td><td class="n">403</td><td class="n">$10.000</td><td class="n">$5.700</td><td class="n zero">$14.14</td></tr>
+<tr><td>Amour Propre Music Clipping | $5k Budget | $1 CPM</td><td class="n">54</td><td class="n">$5.000</td><td class="n">$722</td><td class="n zero">$13.38</td></tr>
+<tr><td>Double Coverage Podcast | Dedicated Account | $20.000 Clippi</td><td class="n">735</td><td class="n">$23.600</td><td class="n">$9.000</td><td class="n zero">$12.24</td></tr>
+<tr><td>Lumena Clipping | $7k Budget | $1.5 CPM</td><td class="n">39</td><td class="n">$7.000</td><td class="n">$423</td><td class="n zero">$10.84</td></tr>
+<tr><td>Cantina UGC Reposting Campaign</td><td class="n">91</td><td class="n">$25.000</td><td class="n">$818</td><td class="n zero">$8.99</td></tr>
+<tr><td>Arpy Brown &amp; Kapote - You Used to Hold Me | Audio Only C</td><td class="n">129</td><td class="n">$2.000</td><td class="n">$1.100</td><td class="n zero">$8.53</td></tr>
+<tr><td>THE LIVING ROOM PODCAST</td><td class="n">263</td><td class="n">$3.000</td><td class="n">$1.800</td><td class="n zero">$6.84</td></tr>
+<tr><td>Joz3$ - R.F.Y.L. | Audio Only Campaign</td><td class="n">42</td><td class="n">$1.400</td><td class="n">$272</td><td class="n zero">$6.48</td></tr>
+<tr><td>Slideshows [Non-English]</td><td class="n">40</td><td class="n">$5.000</td><td class="n">$230</td><td class="n zero">$5.75</td></tr>
+<tr><td>Ali-A Fortnite Map 1v1 UGC Campaign</td><td class="n">25</td><td class="n">$2.500</td><td class="n">$133</td><td class="n zero">$5.32</td></tr>
+<tr><td>Fundingpips Campaign</td><td class="n">167</td><td class="n">$2.000</td><td class="n">$815</td><td class="n zero">$4.88</td></tr>
+<tr><td>Slideshows [English]</td><td class="n">124</td><td class="n">$5.000</td><td class="n">$524</td><td class="n zero">$4.22</td></tr>
+</tbody></table>
+</div>
+
+<h2>O que este número não é</h2>
+
+<p>Não é salário e não é previsão. É a <strong>divisão do que já saiu do caixa</strong> pelo
+número de pessoas que estavam lá para dividir, num dia só: 2 de setembro de 2026. Campanha
+que estava começando tem pouco pago e o número sai baixo; campanha madura sai mais alto.</p>
+
+<p>E vale repetir o que mais importa: dentro de cada campanha a divisão é desigual. Esses
+valores são a média por cabeça, não o que o clipador do meio levou. <strong>O do meio levou
+menos.</strong></p>
+
+<footer>
+  <p>Números lidos em 02/09/2026 nas páginas públicas de 50 campanhas de clipagem; 43 delas
+  mostravam ao mesmo tempo o valor já pago e o número de clipadores, e são essas as que
+  entram na conta. As outras 7 tinham o contador de views ilegível e foram descartadas em
+  vez de estimadas.</p>
+  <p>Página estática, sem cadastro e sem medição de audiência. Os cookies que existem são os
+  de publicidade — explicados na <a href="../privacidade/">política de privacidade</a>.
+  Isto é uma medição, não uma promessa de renda.</p>
+  <p class="fine"><a href="../">calculadora do piso</a> ·
+  <a href="../comecar/">guia para começar</a> ·
+  <a href="../nao-recebi/">clipei e não recebi</a> ·
+  <a href="../plataformas/">qual plataforma confiar</a> ·
+  <strong>quanto um clipador ganha</strong> ·
+  <a href="../privacidade/">privacidade</a></p>
+</footer>
+
+</div>
+</body>
+</html>
